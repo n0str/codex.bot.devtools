@@ -1,0 +1,6 @@
+ports:
+  core: 1338
+  github: 1333
+  metrika: 1334
+  notify: 1339
+  weather: 8742

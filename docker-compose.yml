@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    rabbitmq:
+        image: rabbitmq:3-management
+        ports:
+          - 15672:15672
+          - 5671:5671
+          - 5672:5672
+    mongo:
+        image: mongo:latest
+        ports:
+            - 27017:27017
+        volumes:
+          - ./docker/mongo:/tmp/mongo
+        environment:
+          - DATA_DIR=/tmp/mongo
